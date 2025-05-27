@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car SHOP</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="row">
+  <div class="col-6">
+  <header>
+    <div class="container">
+      <h1 class="logo">Car Shop</h1>
+      <nav class="nav-right">
+        <ul>
+          
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="cs.html">Services</a></li>
+          <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+  <div class="left_section">
+    <table class="product-table">
+      <tr>
+        <td>
+          <div class="product">
+            <img id="p1" src="Mercedes E class.webp" alt="Product 1">
+            <h3>Mercedes E class</h3>
+            <p class="price">$60000</p>
+            <ul class="features">
+              <li>Color: black</li>
+              <li>Generation: 2023<li>
+              
+            </ul>
+          </div>
+        </td>
+        <td>
+          
+          <div class="product">
+            <img id="p2" src="BMW 7 series 750LI.jpg" alt="Product 2">
+            <h3>BMW 750LI</h3>
+            <p class="price">$50000</p>
+            <ul class="features">
+              <li>Color: Greya</li>
+              <li>Generation: 2023</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="product">
+            <img id="zfold" src="Toyoto C-HR 2023.jpg" alt="Product 3">
+            <h3>Toyota C-HR</h3>
+            <p class="price">$10000</p>
+            <ul class="features">
+              <li>Color: White</li>
+              <li>Generation: 2023</li>
+            </ul>
+          </div>
+        </td>
+        <td>
+          <div class="product">
+            <img id="P4" src="Audi R8 V10.jpg" alt="Product 4">
+            <h3>Audi R8 </h3>
+            <p class="price">$200000</p>
+            <ul class="features">
+              <li>Color: Black</li>
+              <li>Generation: 2025</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="right_section">
+    <div id="deal">
+      <a href="deals.html">Advertising!</a>
+    </div>
+    <hr>
+
+    <div id="info">
+      <h3 id="indo_header">
+        Car Shop
+      </h3>
+      <p id="pruduct-information">Press on the car to get information about it.</p>
+    </div>
+  </div>
+
+ 
+
+  <script>
+    let msg_prd_1 =
+  "Mercedes E-Class is available with Automatic transmission. Depending upon the variant and fuel type the E-Class has a mileage of 16.1 kmpl . The E-Class is a 5 seater 6 cylinder car and has length of 5075mm, width of 2065mm and a wheelbase of 3079mm.";
+
+document.getElementById("p1").onclick = function () {
+  document.getElementById("pruduct-information").innerHTML = msg_prd_1;
+
+}
+let msg_prd_2= "The BMW 7 Series is a full-size luxury sedan manufactured and marketed by the German automaker BMW since 1977.[1] It is the successor to the BMW E3  sedan and is now in its seventh generation.."
+document.getElementById("p2").onclick= function(){
+    document.getElementById("pruduct-information").innerHTML= msg_prd_2;
+}
+let msg_prd_3= "The Toyota C-HR is a subcompact crossover, or extra-small SUV, designed to combine the driving experience of a sedan with the raised seating position of an SUV. It has a coupe-like sloping roofline to accentuate its eye-catching looks, and it's available in three trims: the LE, XLE and Limited.."
+document.getElementById("zfold").onclick= function(){
+    document.getElementById("pruduct-information").innerHTML= msg_prd_3;
+}
+let msg_prd_4= "The Audi R8 has standard equipment includes a 562-horsepower 5.2-liter V10 engine, a seven-speed dual-clutch automatic transmission, rear-wheel drive, a power-retractable rear wing, 20-inch wheels and summer tires."
+document.getElementById("P4").onclick= function(){
+    document.getElementById("pruduct-information").innerHTML= msg_prd_4;
+}
+
+
+
+
+  </script>
+</body>
+</html>
